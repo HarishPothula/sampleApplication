@@ -1,0 +1,102 @@
+[
+  {
+    "status": "Active",
+    "acc_type": "PAID",
+    "active_days": 13,
+    "billing_status": "Paid",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": "FourAgents",
+    "email": "00ravikiranwp155@mailinator.com"
+  },
+  {
+    "status": "Active",
+    "acc_type": "PRE_TRIAL",
+    "active_days": 125,
+    "billing_status": "In Trial",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": null,
+    "email": "234ravikirantesting@mailinator.com"
+  },
+  {
+    "status": "Active",
+    "acc_type": "TRIAL",
+    "active_days": 143,
+    "billing_status": "In Trial",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": null,
+    "email": "gopikrishna@mailinator.com"
+  },
+  {
+    "status": "Active",
+    "acc_type": "PRE_TRIAL",
+    "active_days": 233,
+    "billing_status": "In Trial",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": null,
+    "email": "max_record@mailinator.com"
+  },
+  {
+    "status": "Active",
+    "acc_type": "PRE_TRIAL",
+    "active_days": 233,
+    "billing_status": "In Trial",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": null,
+    "email": "min_record@mailinator.com"
+  },
+  {
+    "status": "Active",
+    "acc_type": "TRIAL",
+    "active_days": 176,
+    "billing_status": "In Trial",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": null,
+    "email": "mobi_test_ravi@mailinator.com"
+  },
+  {
+    "status": "Active",
+    "acc_type": "TRIAL",
+    "active_days": 149,
+    "billing_status": "In Trial",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": null,
+    "email": "pawan@lintelindia.com"
+  },
+  {
+    "status": "Active",
+    "acc_type": "PRE_TRIAL",
+    "active_days": 76,
+    "billing_status": "In Trial",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": null,
+    "email": "ravikiran11@mailinator.com"
+  },
+  {
+    "status": "Active",
+    "acc_type": "PRE_TRIAL",
+    "active_days": 76,
+    "billing_status": "In Trial",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": null,
+    "email": "ravikiran12@mailinator.com"
+  },
+  {
+    "status": "Active",
+    "acc_type": "PRE_TRIAL",
+    "active_days": 77,
+    "billing_status": "In Trial",
+    "company_name": "",
+    "max_agents": 0,
+    "plan_name": null,
+    "email": "ravikiran2@mailinator.com"
+  }
+]
