@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+            <form class="form-horizontal" id="user_profile" name="postAjax">
+                <div class="control-group">
+                    <div class="controls">
+                        <input class="form-control" name="id" type="hidden" value="" ng-model="newUser.fname" required="" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" >First Name<span>*</span>:</label>
+                    <div class="controls">
+                        <input class="form-control" name="fname" type="text" value="" ng-model="newUser.fname" required=""/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Last Name<span>*</span>:</label>
+                    <div class="controls">
+                        <input name="lname" class="form-control" type="text" value="" ng-model="newUser.lname" required=""/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Education<span>*</span>:</label>
+                    <div class="controls">
+                        <input name="education" class="form-control" type="text" value="" ng-model="newUser.edu" required=""/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Occupation<span>*</span>:</label>
+                    <div class="controls">
+                        <input name="occupation" type="text" value="" class="form-control" ng-model="newUser.ocup" required=""/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Mobile<span>*</span>:</label>
+                    <div class="controls">
+                        <input name="mobile" type="text" value="" ng-model="newUser.mob" onkeypress="return event.charCode > 47 && event.charCode < 58" class="form-control" required=""/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Email<span>*</span>:</label>
+                    <div class="controls">
+                        <input name="email" type="text" value="" ng-model="newUser.email" class="form-control" required=""/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Address<span>*</span>:</label>
+                    <div class="controls">
+                        <textarea name="address" cols="" rows="" ng-model="newUser.addr" class="form-control" required=""></textarea>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls control-label">
+                        <input class="btn btn-primary" type="button" ng-click="subform(postAjax,newUser)" value="Submit" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4" id="msg">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="row col-md-offset-1">
+    <div class="col-md-4">
+        <h4>{{customers[0].name}}</h4>
+        <ul ng-repeat="nwcust in relatives" class="list-unstyled">
+            <li class="list-group-item">{{nwcust.name}}</li>
+        </ul>
+        <button ng-click="test_scope()" class="btn btn-info">test scope</button>
+    </div>
+    <div id="new_cust"></div>
+
+</div>

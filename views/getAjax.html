@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <table class="table table-responsive table-bordered">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Payment</th>
+                        <th>No of Agents </th>
+                        <th>Trail/Paid</th>
+                    </tr>
+                </thead>
+                <tbody  ng-repeat="users in user_data">
+                    <tr>
+                        <td class="col-md-4">{{users.email}}</td>
+                        <td class="col-md-3">{{users.acc_type}}</td>
+                        <td class="col-md-3">{{users.active_days}}</td>
+                        <td class="col-md-2">{{users.billing_status}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

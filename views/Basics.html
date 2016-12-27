@@ -1,0 +1,54 @@
+<div class="container">
+    <div>
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Search Customer By Name: </label>
+                <input type="text" ng-model="name" class="form-control" autocomplete="" autofocus=""/>
+            </div>
+        </form>
+    <br>
+        <div class="row">
+            <div class="col-md-7">
+                <table class="table table-responsive" width="500" border="1" id="cust_table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone no</th>
+                        <th>City</th>
+                    </tr>
+                    <tr ng-repeat="cust in customers | filter: name | orderBy: 'city'">
+                        <td>{{cust.name | uppercase}}</td>
+                        <td>{{cust.num}}</td>
+                        <td>{{cust.city}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-3 well" style="color: #269abc;">
+                <span ng-show="!relatives">
+                    $rootScope from another controller is not initialized Click on $Scope tab and come agian.
+                </span>
+                <ul>
+                    <li ng-repeat="names in relatives">{{names.name}}</li>
+                </ul>
+                <button ng-click="test_scope()" class="btn btn-info">test scope</button>
+            </div>
+        </div>
+    </div>
+    <form class="form-inline">
+        <fieldset>
+            <div class="form-group">
+                <label>Customer Name:</label>
+                <input type="text" ng-model="newCust.name" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label>Customer Number:</label>
+                <input type="text" ng-model="newCust.num" onkeypress="return event.charCode > 47 && event.charCode < 58" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label>Customer City:</label>
+                <input type="text" ng-model="newCust.city" class="form-control" />
+            </div>
+        </fieldset>
+    </form><br>
+        <button ng-click="appendCustomer();" class="btn btn-primary">Append Customer</button>
+    </div>
+</div>
