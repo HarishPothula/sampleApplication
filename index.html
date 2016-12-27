@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/csp.css">
+    <style>.ng-invalid.ng-touched{background-color: #ce8483;color:white;}</style>
+    <script src="js/angular/angular.min.js"></script>
+</head>
+<body>
+<!--module1-->
+<div class="container fluid" ng-app="demoApp" ng-init='friend_names=["Pranay","Thiru", "Santosh", "Harish"]'><br>
+    <nav class="navbar navbar-inverse" ng-controller="simpleController">
+        <ul class="nav navbar-nav">
+            <li ng-repeat="links in topics | limitTo : 7 " class="ng-cloak">
+                <a href="#/view{{$index + 1}}">{{links | uppercase}}</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="well">
+        <div class="ng-cloak">
+            <strong>Data From : </strong>First Module
+            <label>Customer Name-</label>{{customers[0].name}}
+        </div>
+    </div>
+    <div ng-view=""></div>
+</div>
+<!--module2--><br>
+<div class="container" ng-app="sampleApp" id="App2">
+    <div class="well">
+        <div ng-controller="sampleAppController" class="ng-cloak">
+            <strong>Data From : </strong>Second Module
+            <label>Customer Name-</label>{{parents[0].name}}
+        </div>
+    </div>
+</div>
+<!--<script src="js/jquery-1.11.3.min.js"></script>-->
+<script src="js/angular/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="controllers/simpleController.js"></script>
+<script src="controllers/editController.js"></script>
+<script src="controllers/serviceController.js"></script>
+<script src="services/factory.js"></script>
+<script src="services/service.js"></script>
+<script src="services/ajaxgetdata.js"></script>
+<script src="directives/userInfoCard.js"></script>
+<script src="directives/removefriend.js"></script>
+<script src="directives/address.js"></script>
+</body>
+</html>
